@@ -1,61 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Christo Martin | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christo Martin | Future Tech</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Christo Martin</h1>
-    <p>Final-year CSE Student | AI & Full-Stack Developer</p>
-    <div class="links">
-        <a href="mailto:christomartinog@gmail.com">Email</a>
-        <a href="https://github.com/chris2705" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/christomartin27" target="_blank">LinkedIn</a>
-    </div>
-</header>
+    <div class="background-animation" id="particles-js"></div>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        Final-year Computer Science Engineering student with a strong foundation in programming,
-        system design, and machine learning. Passionate about AI-driven solutions.
-    </p>
-</section>
+    <header class="glass-nav">
+        <!-- Logo removed as per request -->
+        <nav>
+            <ul>
+                <li><a href="#about">01. About</a></li>
+                <li><a href="#experience">02. Experience</a></li>
+                <li><a href="#projects">03. Projects</a></li>
+                <li><a href="#skills">04. Skills</a></li>
+                <li><a href="#leadership">06. Leadership</a></li>
+                <li><a href="#contact">05. Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Python, C, Java</li>
-        <li>HTML, CSS, JavaScript, Django</li>
-        <li>Machine Learning, Networking</li>
-        <li>Git, GitHub, MySQL, SQLite</li>
-    </ul>
-</section>
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero">
+            <div class="hero-content">
+                <p class="mono-text">Hello, I am</p>
+                <h1 class="glitch" data-text="Christo Martin">Christo Martin</h1>
+                <h2 class="typewriter"><span id="typing-text"></span><span class="cursor">|</span></h2>
+                <p class="hero-desc">
+                    Final-year CSE Student | AI Enthusiast | Full-Stack Developer
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary-btn">View Work</a>
+                    <a href="mailto:christomartinog@gmail.com" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
 
-<section>
-    <h2>Projects</h2>
-    <div class="card">
-        <h3>EV Adoption Forecasting Using AI</h3>
-        <p>ML models predicting EV adoption trends (92% accuracy).</p>
-    </div>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="reveal">
+            <h2 class="section-title">01. Who Am I</h2>
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <p>
+                        I am a <strong>Final-year Computer Science Engineering student</strong> with a strong foundation
+                        in programming, system design, and machine learning.
+                        Skilled in developing scalable applications and data-driven solutions, with hands-on experience
+                        in full-stack development and computer networking.
+                    </p>
+                    <p>
+                        Deeply interested in <strong>Artificial Intelligence</strong> and its applications in solving
+                        real-world challenges.
+                        My focus is on building innovative, efficient, and impactful technologies. I am eager to
+                        contribute to dynamic teams while continuously advancing my technical expertise.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <div class="card">
-        <h3>AI-Powered Speech Analysis Tool</h3>
-        <p>Django app using MFCC & Random Forest (98% accuracy).</p>
-    </div>
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="reveal">
+            <h2 class="section-title">02. Experience</h2>
+            <div class="timeline">
 
-    <div class="card">
-        <h3>Gym Management System</h3>
-        <p>Django-based system for managing gym operations.</p>
-    </div>
-</section>
+                <!-- Shell -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">July 2025 - Aug 2025</div>
+                    <div class="timeline-content card glass">
+                        <h3>AI & Data Analytics Intern</h3>
+                        <h4>Shell / Edunet Foundation</h4>
+                        <ul>
+                            <li>Focused on Green Skills & Sustainability.</li>
+                            <li>Developed technical skills in data preprocessing, visualization, and ML dashboard
+                                creation.</li>
+                            <li>Utilized Git & GitHub for collaborative project tracking.</li>
+                        </ul>
+                    </div>
+                </div>
 
-<footer>
-    <p>© 2026 Christo Martin</p>
-</footer>
+                <!-- Agnirva -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">June 2025 - July 2025</div>
+                    <div class="timeline-content card glass">
+                        <h3>AI Summer Internship</h3>
+                        <h4>Agnirva</h4>
+                        <ul>
+                            <li>Mastered AI tools: ChatGPT, Gemini, DALL·E 3.</li>
+                            <li>Built real-world applications in NLP, image generation, and video automation.</li>
+                            <li>Strengthened Python and Neural Network foundations.</li>
+                        </ul>
+                    </div>
+                </div>
 
+                <!-- Corizo -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">July 2024 - Aug 2024</div>
+                    <div class="timeline-content card glass">
+                        <h3>Web Development Intern</h3>
+                        <h4>Corizo</h4>
+                        <ul>
+                            <li>Built responsive web apps using HTML, CSS, JavaScript.</li>
+                            <li>Practiced clean code and version control with Git.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="reveal">
+            <h2 class="section-title">03. Projects</h2>
+            <div class="grid-container">
+
+                <div class="project-card card glass">
+                    <div class="project-header">
+                        <i class="fas fa-folder"></i>
+                        <div class="links">
+                            <a href="https://github.com/chris2705/EV-Adoption-Forecasting-using-AI" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3>EV-Adoption Forecasting</h3>
+                    <p>ML model predicting EV adoption trends based on socioeconomic data.</p>
+                    <div class="tech-stack">
+                        <span>Python</span><span>Pandas</span><span>Random Forest</span>
+                    </div>
+                </div>
+
+                <div class="project-card card glass">
+                    <div class="project-header">
+                        <i class="fas fa-folder"></i>
+                        <div class="links">
+                            <a href="https://github.com/GMR-26/Speech_analysis" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3>AI Speech Analysis Tool</h3>
+                    <p>Django app for speech therapists using MFCC & Random Forest (98% accuracy).</p>
+                    <div class="tech-stack">
+                        <span>Django</span><span>Librosa</span><span>Scikit-learn</span>
+                    </div>
+                </div>
+
+                <div class="project-card card glass">
+                    <div class="project-header">
+                        <i class="fas fa-folder"></i>
+                        <div class="links">
+                            <a href="https://github.com/Abin444369/gym_management_system" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3>Gym Management System</h3>
+                    <p>Django-based system for managing memberships, schedules, and payments.</p>
+                    <div class="tech-stack">
+                        <span>Django</span><span>SQLite</span><span>Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="project-card card glass">
+                    <div class="project-header">
+                        <i class="fas fa-folder"></i>
+                        <div class="links">
+                            <a href="https://github.com/chris2705/web-fullstack" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-stack platform with admin panel, JWT auth, and MongoDB.</p>
+                    <div class="tech-stack">
+                        <span>Node.js</span><span>MongoDB</span><span>Express</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="reveal">
+            <h2 class="section-title">04. Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category card glass">
+                    <h3>Languages</h3>
+                    <p>Python, C, Java</p>
+                </div>
+                <div class="skill-category card glass">
+                    <h3>Web</h3>
+                    <p>HTML, CSS, JavaScript, Django, Node.js</p>
+                </div>
+                <div class="skill-category card glass">
+                    <h3>Tools</h3>
+                    <p>Git, GitHub, VS Code</p>
+                </div>
+                <div class="skill-category card glass">
+                    <h3>Data/ML</h3>
+                    <p>MySQL, SQLite, Scikit-learn, Pandas</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION & CERTIFICATES -->
+        <section id="education" class="reveal">
+            <h2 class="section-title">05. Education & Certs</h2>
+            <div class="dual-column">
+                <div class="column card glass">
+                    <h3>Education</h3>
+                    <div class="edu-item">
+                        <h4>B.Tech in CSE</h4>
+                        <p>Adi Shankara Institute of Engineering and Technology (2022-2026)</p>
+                        <p>CGPA: 6.67</p>
+                    </div>
+                    <div class="edu-item">
+                        <h4>Higher Secondary</h4>
+                        <p>Brahmanandodayam Higher Secondary School (2021-2022)</p>
+                        <p>Percentage: 91.4%</p>
+                    </div>
+                    <div class="edu-item">
+                        <h4>SSLC</h4>
+                        <p>De Paul Higher Secondary School Angamaly (2020)</p>
+                        <p>Percentage: 91.4%</p>
+                    </div>
+                </div>
+                <div class="column card glass">
+                    <h3>Certifications</h3>
+                    <ul class="styled-list">
+                        <li>Intro to Programming in C (NPTEL)</li>
+                        <li>Web Development Training (Corizo)</li>
+                        <li>Java Zero to Hero (Lets Upgrade)</li>
+                        <li>Python Essentials (Scaler)</li>
+                        <li>Python GUI Training (Infosys)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- LEADERSHIP SECTION -->
+        <section id="leadership" class="reveal">
+            <h2 class="section-title">06. Leadership & Activities</h2>
+            <div class="grid-container">
+
+                <div class="project-card card glass">
+                    <div class="project-header">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Salesforce Trailhead</h3>
+                    <h4>Salesforce Certified Agentforce Specialist (Present)</h4>
+                    <ul class="styled-list">
+                        <li>Completed the Innovater Badge and progressing through advanced levels.</li>
+                        <li>Gaining practical knowledge in Salesforce CRM, workflows and automation.</li>
+                        <li>Building problem-solving, adaptability and industry-relevant cloud skills.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card card glass">
+                    <div class="project-header">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Part-time Tutor</h3>
+                    <h4>Academics Tutor (Present)</h4>
+                    <ul class="styled-list">
+                        <li>Taking after-class tuition for students to help in their academics.</li>
+                        <li>Learning new topics and revising topics enables life-long learning.</li>
+                        <li>Helping students achieve academical success.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card card glass">
+                    <div class="project-header">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Game Development Club - ASIET</h3>
+                    <h4>Co-Finance Lead (Oct 2023 – Present)</h4>
+                    <ul class="styled-list">
+                        <li>Organized workshops (e.g., Unity) and technical activities promoting game dev skills.</li>
+                        <li>Worked as teams to conduct various events.</li>
+                        <li>Improved team work and communication skills.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="contact">
+            <h2>Get In Touch</h2>
+            <p>Currently open for new opportunities and collaborations.</p>
+            <a href="mailto:christomartinog@gmail.com" class="big-link">christomartinog@gmail.com</a>
+
+            <div class="socials">
+                <a href="https://github.com/chris2705" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/christomartin27" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+
+            <p class="copyright">Designed & Built by Christo Martin</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
